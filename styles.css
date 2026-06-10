@@ -327,11 +327,20 @@ h3 {
   padding: 18px;
 }
 
+.featured-product > div {
+  min-width: 0;
+}
+
 .featured-product img {
   aspect-ratio: 1;
   border-radius: var(--radius);
   height: 100%;
   object-fit: cover;
+  width: 100%;
+}
+
+.featured-product h3 {
+  overflow-wrap: anywhere;
 }
 
 .product-tag {
@@ -845,9 +854,20 @@ cite {
     grid-template-columns: 1fr;
   }
 
+  .featured-product {
+    align-items: stretch;
+    gap: 16px;
+  }
+
   .featured-product img {
     aspect-ratio: 4 / 3;
+    height: auto;
     width: 100%;
+  }
+
+  .featured-product h3 {
+    font-size: 1.55rem;
+    line-height: 1.08;
   }
 
   .product-body {
