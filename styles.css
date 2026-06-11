@@ -168,7 +168,7 @@ a {
   display: flex;
   justify-content: center;
   max-width: 720px;
-  padding-bottom: clamp(14px, 4vh, 38px);
+  padding-bottom: clamp(4px, 1.4vw, 16px);
   position: relative;
   width: 100%;
   z-index: 1;
@@ -239,6 +239,7 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   gap: 14px;
+  justify-content: center;
 }
 
 .button {
@@ -774,7 +775,7 @@ cite {
   .hero {
     height: auto;
     aspect-ratio: 3 / 2;
-    padding: 18px 22px 24px;
+    padding: 18px 22px 10px;
   }
 
   .hero-media {
@@ -833,7 +834,6 @@ cite {
     font-size: 2.45rem;
   }
 
-  .hero-actions,
   .cta-actions,
   .site-footer,
   .site-footer div {
@@ -841,12 +841,28 @@ cite {
     flex-direction: column;
   }
 
+  .hero-actions {
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 10px;
+    width: 100%;
+  }
+
   .button {
     width: 100%;
   }
 
   .hero-content {
-    padding-bottom: 12px;
+    padding-bottom: 0;
+  }
+
+  .hero .button {
+    flex: 1 1 0;
+    font-size: clamp(0.82rem, 3.6vw, 1rem);
+    min-height: 42px;
+    padding: 10px 12px;
+    width: auto;
   }
 
   .featured-product,
