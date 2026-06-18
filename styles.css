@@ -157,7 +157,7 @@ a {
 }
 
 .hero-media {
-  background: url("assets/home-bright-beauty-background.png") center / contain no-repeat;
+  background: url("assets/home-star-bright-background.png") center / contain no-repeat;
   inset: 0;
   position: absolute;
   z-index: 0;
@@ -361,7 +361,9 @@ h3 {
 
 .featured-product strong {
   color: var(--sage-dark);
+  display: block;
   font-size: 1.15rem;
+  line-height: 1.25;
 }
 
 .products {
@@ -429,14 +431,20 @@ h3 {
   margin-bottom: 14px;
 }
 
+.product-top h3 {
+  min-width: 0;
+}
+
 .product-top span {
   background: var(--mist);
-  border-radius: 999px;
+  border-radius: var(--radius);
   color: var(--sage-dark);
-  flex: 0 0 auto;
-  font-size: 0.92rem;
+  flex: 0 0 96px;
+  font-size: 0.82rem;
   font-weight: 800;
-  padding: 7px 11px;
+  line-height: 1.15;
+  padding: 8px 10px;
+  text-align: center;
 }
 
 .product-body p {
@@ -779,7 +787,7 @@ cite {
   }
 
   .hero-media {
-    background-image: url("assets/home-bright-beauty-background.png");
+    background-image: url("assets/home-star-bright-background.png");
     background-size: contain;
     background-position: center;
   }
@@ -893,5 +901,10 @@ cite {
   .product-top {
     align-items: start;
     flex-direction: column;
+  }
+
+  .product-top span {
+    flex: 0 1 auto;
+    max-width: 100%;
   }
 }
